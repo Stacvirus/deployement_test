@@ -6,5 +6,6 @@ const app = http.createServer((req, res) =>{
 
 const port = process.env.PORT || 3005;
 
-app.listen(port);
-console.log("started at port ",port);
+app.listen(port, () =>{
+    console.log("started at port ",port);
+});
